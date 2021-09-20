@@ -1,0 +1,929 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__detail ">
+           <p class="text-right text-white mb-0">
+              <i class="fa fa-phone"></i>
+              <span class="mx-2 border-right pr-2 font-weight-bold">0977 783 541</span>
+              <i class="fa fa-search"></i>
+           </p>
+        </div>
+      <nav class="container header__navbar navbar navbar-expand-lg navbar-dark py-0">
+          <div class="container-fluid">
+             <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="" width="100px">
+             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item line active">
+                  <a href="#" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item line">
+                  <a href="#" class="nav-link">WHAT'ON</a>
+                </li>
+                <li class="nav-item line">
+                  <a href="#" class="nav-link">SHORTCODES</a>
+                </li>
+                <li class="nav-item line">
+                  <a href="#" class="nav-link">CONTACT</a>
+                </li>
+                <li class="nav-item line">
+                  <a href="#" class="nav-link">SIGN IN</a>
+                </li>
+                <li class="nav-item line">
+                  <a href="#" class="nav-link">SIGN UP</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- CAROUSEL -->
+    <section class="my-carousel">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators justify-content-start carousel-indicators--config">
+            <li class="active" data-target="#carousel" 
+            data-slide-to="0"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active item-1">
+
+            <div class="carousel-item__overlay"></div>
+            <div class="carousel-item__caption container text-white">
+              <span class="title">ACTION, SCI_FI, ADVENTURE, FANTASY</span>
+              <h1 class="display-4">AVATAR</h1>
+              <p>It might be more impressive on a technical level than as a piece of storytelling, but Avatar reaffirms James Cameron's singular gift for imaginative, absorbing filmmaking.</p>
+              <div class="carousel-item__trailer mt-4">
+                <span class="mr-2 text-white d-inline-block rounded-circle text-center">PG</span>
+                <button class="btn-orange border-0 text-white"> 
+                  <i class="fa fa-play mr-2"></i>
+                  PLAY TRAILER
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item item-2">
+
+            <div class="carousel-item__overlay"></div>
+            <div class="carousel-item__caption container text-white">
+              <span class="title">ACTION, ADVENTURE, FANTASY</span>
+              <h1 class="display-4">KING KONG</h1>
+              <p>Featuring state-of-the-art special effects, terrific performances, and a majestic sense of spectacle, Peter Jackson's remake of King Kong is a potent epic that's faithful to the spirit of the 1933 original.</p>
+              <div class="carousel-item__trailer mt-4">
+                <span class="mr-2 text-white d-inline-block rounded-circle text-center">PG</span>
+                <button class="btn-orange border-0 text-white"> 
+                  <i class="fa fa-play mr-2"></i>
+                  PLAY TRAILER
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item item-3">
+
+            <div class="carousel-item__overlay"></div>
+            <div class="carousel-item__caption container text-white">
+              <span class="title">ACTION, ADVENTURE, FANTASY</span>
+              <h1 class="display-4">JUSTICE LEAGUE</h1>
+              <p>Justice League leaps over a number of DC movies, but its single bound isn't enough to shed the murky aesthetic, thin characters, and chaotic action that continue to dog the franchise.</p>
+              <div class="carousel-item__trailer mt-4">
+                <span class="mr-2 text-white d-inline-block rounded-circle text-center">PG
+                </span>
+                <button class="btn-orange border-0 text-white"> 
+                  <i class="fa fa-play mr-2"></i>
+                  PLAY TRAILER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CAROUSEL -->
+
+    <!-- SHOWING MOVIE -->
+    <section class="movie">
+         <div class="container">
+           <h1 class="movie__title line section-title">SHOWING MOVIE</h1>
+            <div class="row">
+              <div class="col-6 col-md-3 text-center">
+                <div class="movie__item text-white">
+                  <img src="./img/movie1.jpg" class="w-100">
+                  <div class="movie__overlay"></div>
+                  <div class="movie__detail">
+                    <i class="fa fa-play d-block"></i>
+                    <a class="d-block">READ MORE</a>
+                    <span>Release: 23, Aus, 2021</span>
+                  </div>
+                </div>
+                <p class="movie__name">Fantastic 4</p>
+                <i class="fa fa-star movie__star" ></i>
+                <i class="fa fa-star movie__star" ></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+              </div>
+              <div class="col-6 col-md-3 text-center">
+                <div class="movie__item text-white">
+                  <img src="./img/movie2.jpg" class="w-100">
+                  <div class="movie__overlay"></div>
+                  <div class="movie__detail">
+                    <i class="fa fa-play d-block"></i>
+                    <a class="d-block">READ MORE</a>
+                    <span>Release: 23, Aus, 2021</span>
+                  </div>
+                </div>
+                <p class="movie__name">Tarzan</p>
+                <i class="fa fa-star movie__star" ></i>
+                <i class="fa fa-star movie__star" ></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+              </div>
+              <div class="col-6 col-md-3 text-center">
+                <div class="movie__item text-white">
+                  <img src="./img/movie3.jpg" class="w-100">
+                  <div class="movie__overlay"></div>
+                  <div class="movie__detail">
+                    <i class="fa fa-play d-block"></i>
+                    <a class="d-block">READ MORE</a>
+                    <span>Release: 16, Mar, 2021</span>
+                  </div>
+                </div>
+                <p class="movie__name">Tomb Raider</p>
+                <i class="fa fa-star movie__star" ></i>
+                <i class="fa fa-star movie__star" ></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+              </div>
+              <div class="col-6 col-md-3 text-center">
+                <div class="movie__item text-white">
+                  <img src="./img/movie4.jpg" class="w-100">
+                  <div class="movie__overlay"></div>
+                  <div class="movie__detail">
+                    <i class="fa fa-play d-block"></i>
+                    <a class="d-block">READ MORE</a>
+                    <span>Release: 7, Aus, 2021</span>
+                  </div>
+                </div>
+                <p class="movie__name">G.I.Joe</p>
+                <i class="fa fa-star movie__star" ></i>
+                <i class="fa fa-star movie__star" ></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+              </div>
+            </div>
+         </div>
+    </section>
+    <!-- END SHOWING MOVIE -->
+
+
+    <!-- SHOW TIMES -->
+    <section class="showtimes">
+      <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link line active" id="mon-tab" data-toggle="tab" href="#mon" role="tab" aria-controls="mon" aria-selected="true">MON</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link line" id="tue-tab" data-toggle="tab" href="#tue" role="tab" aria-controls="tue" aria-selected="false">TUE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link line" id="wed-tab" data-toggle="tab" href="#wed" role="tab" aria-controls="wed" aria-selected="false">WED</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link line" id="thur-tab" data-toggle="tab" href="#thur" role="tab" aria-controls="thur" aria-selected="false">THUR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link line" id="fri-tab" data-toggle="tab" href="#fri" role="tab" aria-controls="fri" aria-selected="false">FRI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link line" id="sat-tab" data-toggle="tab" href="#sat" role="tab" aria-controls="sat" aria-selected="false">SAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link line" id="sun-tab" data-toggle="tab" href="#sun" role="tab" aria-controls="sun" aria-selected="false">SUN</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="mon" role="tabpanel" aria-labelledby="mon-tab">
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie5.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    MYSTERY & THRILLER, CRIME, DRAMA
+                  </span>
+                  <h1 class="display-4">Inside Man</h1>
+                  <p>A police detective, a bank robber, and a high-power broker enter high-stakes negotiations after the criminal's brilliant heist spirals into a hostage situation.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-items-center ">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie6.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>ACTION, ADVENTURE, SCI-FI, FANTASY</span>
+                  <h1 class="display-4">Star War</h1>
+                  <p>In a time of conflict, a group of unlikely heroes band together on a mission to steal the plans to the Death Star, the Empire's ultimate weapon of destruction.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie7.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>ACTION, HORROR, COMEDY</span>
+                  <h1 class="display-4">Zombieland</h1>
+                  <p>Zombie slayers Tallahassee, Columbus, Wichita and Little Rock leave the confines of the White House to travel to Graceland in Memphis, Tenn. Along the way, they encounter other post-apocalyptic warriors and a group of survivors who find refuge in a commune. The scrappy fighters must now rely on their wits and weapons more than ever as they soon find themselves in a relentless battle against smarter, faster and seemingly indestructible zombies.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tue" role="tabpanel" aria-labelledby="tue-tab">
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie8.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    MYSTERY & THRILLER, ACTION, ADVENTURE
+                  </span>
+                  <h1 class="display-4">Fast & Furious 8</h1>
+                  <p>With Dom and Letty married, Brian and Mia retired and the rest of the crew exonerated, the globe-trotting team has found some semblance of a normal life. They soon face an unexpected challenge when a mysterious woman named Cipher forces Dom to betray them all. Now, they must unite to bring home the man who made them a family and stop Cipher from unleashing chaos.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie9.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION, FANTASY
+                  </span>
+                  <h1 class="display-4">Civil War</h1>
+                  <p>Political pressure mounts to install a system of accountability when the actions of the Avengers lead to collateral damage. The new status quo deeply divides members of the team. Captain America (Chris Evans) believes superheroes should remain free to defend humanity without government interference. Iron Man (Robert Downey Jr.) sharply disagrees and supports oversight. As the debate escalates into an all-out feud, Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner) must pick a side.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="tab-pane fade" id="wed" role="tabpanel" aria-labelledby="wed-tab">
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie10.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    DRAMA, MYSTERY & THRILLER, CRIME, ACTION
+                  </span>
+                  <h1 class="display-4">Black And Blue</h1>
+                  <p>A rookie policewoman in New Orleans inadvertently captures the shooting death of a young drug dealer on her body cam. After realizing the murder was committed by corrupt cops, she teams up with the only person from the community who's willing to help her. Now, she finds herself on the run from both the vengeful criminals and the lawmen who desperately want to destroy the incriminating footage.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie20.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ACTION, SCI-FI
+                  </span>
+                  <h1 class="display-4">The Matrix</h1>
+                  <p>Neo (Keanu Reeves) believes that Morpheus (Laurence Fishburne), an elusive figure considered to be the most dangerous man alive, can answer his question -- What is the Matrix? Neo is contacted by Trinity (Carrie-Anne Moss), a beautiful stranger who leads him into an underworld where he meets Morpheus. They fight a brutal battle for their lives against a cadre of viciously intelligent secret agents. It is a truth that could cost Neo something more precious than his life.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="thur" role="tabpanel" aria-labelledby="thur-tab">
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie11.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION
+                  </span>
+                  <h1 class="display-4">Black Window</h1>
+                  <p>Natasha Romanoff, aka Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy, and the broken relationships left in her wake long before she became an Avenger.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie12.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    HORROR
+                  </span>
+                  <h1 class="display-4">Fear Street Part One: 1994</h1>
+                  <p>After a series of brutal slayings, a teen and her friends take on an evil force that's plagued their notorious town for centuries.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="fri" role="tabpanel" aria-labelledby="fri-tab">
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie13.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION, FANTASY
+                  </span>
+                  <h1 class="display-4">Bloodshot </h1>
+                  <p>Recently killed in action, soldier Ray Garrison gets a new lease on life when the RST Corp. brings him back from the dead. With an army of nanotechnology in his veins, he's an unstoppable force -- stronger than ever with the power to heal instantly. But when the company decides to manipulate his mind and memories, Garrison must embark on a desperate mission to find out what's real and what's not.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie14.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION
+                  </span>
+                  <h1 class="display-4">Mad Max </h1>
+                  <p>Years after the collapse of civilization, the tyrannical Immortan Joe enslaves apocalypse survivors inside the desert fortress the Citadel. When the warrior Imperator Furiosa (Charlize Theron) leads the despot's five wives in a daring escape, she forges an alliance with Max Rockatansky (Tom Hardy), a loner and former captive. Fortified in the massive, armored truck the War Rig, they try to outrun the ruthless warlord and his henchmen in a deadly high-speed chase through the Wasteland.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie15.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION, FANTASY, SCI-FI
+                  </span>
+                  <h1 class="display-4">Avengers: Infinity War  </h1>
+                  <p>Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie16.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION, SCI-FI
+                  </span>
+                  <h1 class="display-4">Rampage</h1>
+                  <p>Primatologist Davis Okoye shares an unshakable bond with George, an extraordinarily intelligent, silverback gorilla that's been in his care since birth. When a rogue genetic experiment goes wrong, it causes George, a wolf and a reptile to grow to a monstrous size. As the mutated beasts embark on a path of destruction, Okoye teams up with a discredited genetic engineer and the military to secure an antidote and prevent a global catastrophe.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="sat" role="tabpanel" aria-labelledby="sat-tab">
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie17.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, MUSICAL, FANTASY, COMEDY, ROMANCE, KIDS & FAMILY
+                  </span>
+                  <h1 class="display-4">Aladdin</h1>
+                  <p>Aladdin is a lovable street urchin who meets Princess Jasmine, the beautiful daughter of the sultan of Agrabah. While visiting her exotic palace, Aladdin stumbles upon a magic oil lamp that unleashes a powerful, wisecracking, larger-than-life genie. As Aladdin and the genie start to become friends, they must soon embark on a dangerous mission to stop the evil sorcerer Jafar from overthrowing young Jasmine's kingdom.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie18.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ACTION
+                  </span>
+                  <h1 class="display-4">Crank: High Voltage</h1>
+                  <p>After surviving an incredible plunge to near-certain death, Chev Chelios (Jason Statham) is abducted by Chinese mobsters. Waking up three months later, Chev finds that his nearly indestructible heart has been replaced with a battery-operated device that requires regular jolts of electricity or it will fail. Chev escapes from his captors, reunites with his lover, Eve (Amy Smart), and sets out on a frantic chase through Los Angeles to get his real heart back.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie19.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION, FANTASY, COMEDY, SCI-FI
+                  </span>
+                  <h1 class="display-4">Thor: Ragnarok </h1>
+                  <p>Imprisoned on the other side of the universe, the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor's quest for survival leads him in a race against time to prevent the all-powerful Hela from destroying his home world and the Asgardian civilization.
+                  </p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="sun" role="tabpanel" aria-labelledby="sun-tab">
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie21.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ACTION, SCI-FI
+                  </span>
+                  <h1 class="display-4">Outside the Wire</h1>
+                  <p>In the near future, a drone pilot sent into a war zone finds himself paired up with a top-secret android officer on a mission to stop a nuclear attack.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie23.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION, SCI-FI
+                  </span>
+                  <h1 class="display-4">The Tomorrow War</h1>
+                  <p>In The Tomorrow War, the world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future mankind is losing a global war against a deadly alien species. The only hope for survival is for soldiers and civilians from the present to be transported to the future and join the fight.     </p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row showtimes__movie my-4">
+              <div class="col-6 col-lg-2"> 
+                <img src="./img/movie24.jpg" class="img-fluid">
+              </div>
+              <div class="col-6 col-lg-10">
+                <div class="showtimes__detail ">
+                  <span>
+                    ADVENTURE, ACTION, FANTASY, COMEDY
+                  </span>
+                  <h1 class="display-4"> Ant-Man and The Wasp</h1>
+                  <p>Scott Lang is grappling with the consequences of his choices as both a superhero and a father. Approached by Hope van Dyne and Dr. Hank Pym, Lang must once again don the Ant-Man suit and fight alongside the Wasp. The urgent mission soon leads to secret revelations from the past as the dynamic duo finds itself in an epic battle against a powerful new enemy.</p>
+                  <a href="#" class="d-block mb-4">
+                    FULL SYNOPSIS
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="showtimes__list d-flex justify-content-between align-item-center">
+                    <div>
+                      <i class="fa fa-clock-o"></i>
+                      <span class="mr-2">VIEWING TIMES</span><br>
+                      <button class="btn mr-2">14:25</button>
+                      <button class="btn mr-2">16:25</button>
+                      <button class="btn mr-2">17:25</button>
+                      <button class="btn mr-2">19:25</button>
+                    </div>
+                    <p class="showtimes__length">
+                      105 MINS
+                      <span class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+    <!-- END SHOW TIMES -->
+
+
+    <!-- COMING SOON -->
+    <section class="coming">
+      <div class="coming__bg">
+        <div class="container">
+          <h1 class="section-title line">COMING SOON</h1>
+          <div class="row">
+            <div class="col-6 d-flex">
+              <div class="coming__detail text-white align-items-center">
+                <span>HORROR, MYSTERY & THRILLER </span>
+                <h1 class="display-4">Annabelle</h1>
+                <p>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <span class="coming__date">
+                    <i class="fa fa-calendar-o"></i>
+                    26 Jun, 2019
+                  </span>
+                </p>
+                <p>
+                  Determined to keep Annabelle from wreaking more havoc, paranormal investigators Ed and Lorraine Warren lock the possessed doll in the artifacts room in their house. But when the doll awakens the room's evil spirits, it soon becomes an unholy night of terror for the couple's 10-year-old daughter, her friends and their young baby sitter.
+                </p>
+                <a href="#"> MORE INFO <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="coming__trailer">
+                
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coming__list">
+
+      </div>
+    </section>
+    <!-- END COMING SOON -->
+
+
+    <!-- CONTACT -->
+    <section class="contact">
+
+    </section>
+    <!-- END CONTACT -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,452 @@
+/* GLOBAL CSS */
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}   
+.line::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #fbbd61, #ec7332);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.section-title{
+    color: #ec7332;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    position: relative;
+}
+
+/* END GLOBAL CSS */
+
+/* HEADER */
+.header{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+.header__detail i, .header__detail span{
+    font-size: 14px;
+}
+.header__detail span{
+    border-color: rgba(255, 255, 255, 0.2)!important;
+}
+.header__navbar .nav-item .nav-link{
+    color: white;
+    padding: 0 20px;
+}
+.header__navbar .nav-item{
+    position: relative;
+}
+.header__navbar .navbar-nav{
+    border-bottom:1px solid rgba(124, 104, 104, 0.2)!important;
+}
+
+.header__navbar .nav-item:hover::after, .header__navbar .nav-item.active::after{
+    width: 100%;
+}
+
+/* END HEADER */
+
+/* CAROUSEL */
+.carousel-item__overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, black, transparent);
+}
+.carousel-item__caption{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.carousel-item__caption .title{
+    color:#fbbd61;
+    font-style: 14px;
+    letter-spacing: 2px;
+}
+.carousel-item__caption p{
+    font-size: 18px;
+    padding-right: 25%;
+}
+.carousel-item__trailer span{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    line-height: 40px;
+}
+.btn-orange{
+    background: linear-gradient(to right, #fbbd61, #ec7332);
+    border-radius: 40px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 11px 30px;
+    cursor: pointer;
+}
+.my-carousel .carousel-indicators li{
+    width: 11px;
+    height: 11px;
+    background: transparent;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+.my-carousel .carousel-indicators{
+    bottom: 50px;
+}
+.my-carousel .carousel-indicators li.active{
+    background: white;
+}
+.my-carousel .carousel-item{
+    height: 800px;
+
+}
+.my-carousel .item-1{
+    background-image: url(../img/carousel1.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.my-carousel .item-2{
+    background-image: url(../img/carousel2.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+.my-carousel .item-3{
+    background-image: url(../img/carousel3.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+/* END CAROUSEL */
+
+/* MOVIE */
+.movie{
+    padding-top: 80px;
+}
+.movie__title.line::after{
+    width: 180px;
+}
+.movie__item{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.movie__detail{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(0.8);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s;
+    opacity: 0;
+}
+.movie__detail i{
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin:15px auto;
+    line-height: 80px;
+}
+.movie__detail a{
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.movie__detail span{
+    font-size: 16px;
+}
+.movie__overlay{
+    position: absolute;
+    top: 0;
+    left: -400%;
+    transform: skewX(45deg);
+    background: linear-gradient(to bottom, #fbbd61, #ec7332);
+    width: 300%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.movie__item:hover .movie__overlay{
+    left: -100%;
+}
+.movie__item:hover .movie__detail{
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
+.movie__name{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.movie__star{
+    color: #fbbd61;
+}
+
+
+/* END MOVIE */
+
+/* SHOWTIMES */
+.showtimes{
+    padding-top: 80px;
+
+}
+.showtimes .nav-tabs .nav-link{
+    position: relative;
+    color: #4a4a4a;
+    padding: 10px 30px;
+}
+.showtimes .nav-tabs .nav-link.active.line::after, .showtimes .nav-tabs .nav-link:hover.line::after{
+    width: 100%;
+}
+.showtimes .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .showtimes .nav-tabs .nav-link:hover{
+    border: white;
+}
+.showtimes__movie img{
+    border-radius: 10px;
+}
+.showtimes__list{
+    color: #717171;
+}
+.showtimes__detail span{
+    font-size: 14px;
+    color: #ec7332;
+    letter-spacing: 2px;
+}
+.showtimes__detail h1{
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+.showtimes__detail p{
+    font-size: 16px;
+}
+.showtimes__detail a{
+    font-size: 12px;
+    color: #ec7332;
+    letter-spacing: 3px;
+}
+.showtimes__list i, .showtimes__list span{
+    font-size: 14px;
+}
+.showtimes__length span{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+
+/* END SHOWTIMES */
+
+/* COMING */
+.coming{
+    background-color: black;
+}
+.coming__bg{
+    padding: 80px 0;
+    background-image: url(../img/coming3.jpg);
+    background-size: cover;
+    background-position: top center;
+
+}
+.coming__bg .section-title{
+    color: white;
+}
+.coming__bg .line::after{
+    width: 160px;
+}
+.coming__detail > span{
+    font-size: 14px;
+    color: #ec7332;
+}
+.coming__detail > h1{
+    font-size: 34px;
+}
+.coming__detail .fa-star{
+    font-size: 14px;
+    color: #fbbd61;
+}
+.coming__date{
+    opacity: 0.75;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.coming__detail a{
+    color: #ec7332;
+    letter-spacing: 3px;
+}
+.coming__trailer{
+    position: relative;
+    background-image: url(../img/coming4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    background-position: center center;
+}
+
+.coming__trailer i{
+    width: 84px;
+    height: 84px;
+    display: block;
+    border: 2px solid #ec7332;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    line-height: 84px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* END COMING */
+
+/* SCREEN */
+@media screen and (max-width:576px)
+{
+    .my-carousel .carousel-inner h1{
+        font-size: 30px;
+        display: block;
+        margin-bottom: 10px;
+        padding-left: 30px;
+    }
+    .my-carousel .carousel-inner p{
+        font-size: 13px;
+        padding-left: 30px;
+        text-align: justify;
+    }
+    .my-carousel .carousel-inner .title{
+        display: inline-block;
+        padding-left: 30px;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .showtimes .nav-tabs .nav-link{
+        padding: 5px 15px;
+    }
+    .showtimes__list .btn{
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .showtimes__detail span{
+        font-size: 10px;
+        letter-spacing: 1px;
+        display: block;
+    }
+    .showtimes__detail h1{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .showtimes__detail p{
+        font-size: 12px;
+    }
+    .showtimes__detail a{
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 5px!important;
+    }
+    .showtimes__list i, .showtimes__list span{
+        font-size: 10px;
+    }
+    .showtimes__length span{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .coming__detail p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+}
+@media screen and (min-width:576px) and (max-width:991px){
+    .my-carousel .carousel-inner h1{
+        font-size: 28px;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    .my-carousel .carousel-inner p{
+        font-size: 18px;
+        padding-left: 10px;
+        text-align: justify;
+    }
+    .my-carousel .carousel-inner .title{
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .showtimes .nav-tabs .nav-link{
+        padding: 5px 15px;
+    }
+    .showtimes__list .btn{
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        font-size:15px;
+    }
+    .showtimes__detail span{
+        font-size: 15px;
+        letter-spacing: 1px;
+    
+    }
+    .showtimes__detail h1{
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    .showtimes__detail p{
+        font-size: 15px;
+    }
+    .showtimes__detail a{
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin-bottom: 25px!important;
+    }
+    .showtimes__list i, .showtimes__list span{
+        font-size: 15px;
+    }
+    .showtimes__length span{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END SCREEN */
